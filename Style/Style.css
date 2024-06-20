@@ -270,7 +270,10 @@ section.ProductSection {
     color: #04ed049c;
     font-size: 20px;
 }
-
+.ProductSection .ProductCard .Product .Text h2 a {
+    text-decoration: none;
+    color: black;
+}
 .DressStyleSection {
     display: flex;
     gap: 2rem;
