@@ -11,8 +11,13 @@ body {
     height: 100%;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 nav {
-    padding: 11px;
+    padding: 11px 3pc;
     display: flex;
     justify-content: space-around;
 }
@@ -241,7 +246,8 @@ section.ProductSection {
     gap: 2px;
 }
 
-.ProductSection .ProductCard .Product .Text h2 {
+.ProductSection .ProductCard .Product .Text h2 a {
+    color: black;
     font-size: 15px;
 }
 
@@ -344,12 +350,13 @@ section.ProductSection {
 }
 
 .CustomersRating .RatingCard {
-    overflow-x: auto;
+    overflow-x: scroll;
     scrollbar-width: thin;
+    /* overflow-x: hidden; */
     display: flex;
-    scroll-behavior: smooth;
     gap: 2rem;
     padding-bottom: 1rem;
+    scroll-behavior: smooth;
 }
 
 .CustomersRating .RatingCard .Card {
@@ -362,6 +369,7 @@ section.ProductSection {
     border: 1px solid #e9dddd;
     box-shadow: 0px 0px 10px 2px #e7e7e7ee;
     flex-direction: column;
+    transition: 1s all;
 }
 
 .CustomersRating .RatingCard .Card .star {
@@ -397,7 +405,7 @@ footer {
 
 footer .Float {
     position: absolute;
-    top: -150px;
+    top: -138px;
     /* padding: 3%; */
     left: 9px;
 }
@@ -411,6 +419,7 @@ footer .Float .StayOffersSection {
     background-color: #121212;
     color: white;
     justify-content: center;
+    flex-direction: row;
 }
 
 footer .Float .StayOffersSection h1 {
@@ -484,6 +493,8 @@ footer .top .First p {
 footer .top .First .Icon {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 footer .top .First .Icon i {
@@ -678,14 +689,15 @@ footer .buttom .PayFuture img {
     }
     .ProductSection .ProductCard {
         width: 100%;
-        overflow: scroll;
+        scrollbar-width: thin;
+        overflow-x: scroll;
         gap: 2rem;
     }
     .DressStyleSection .DressCard .CardBox {
         gap: 0rem;
     }
     .CustomersRating {
-        padding: 1pc 3pc 10pc;
+        padding: 1pc 1pc 10pc;
     }
     .CustomersRating .text h1 {
         font-size: 1.3rem;
@@ -749,7 +761,7 @@ footer .buttom .PayFuture img {
         display: none;
     }
     nav .FloatNav {
-        display: flex;
+        display: none;
     }
     nav .FloatNav ul {
         display: flex;
@@ -763,6 +775,8 @@ footer .buttom .PayFuture img {
         position: fixed;
         z-index: 999;
         flex-direction: column;
+        transition: all 0.8;
+        transform: translate(all 0.8);
     }
     nav .FloatNav ul span {
         font-size: 3rem;
@@ -818,6 +832,7 @@ footer .buttom .PayFuture img {
         align-items: center;
     }
     footer .Float .StayOffersSection .btn .input {
+        padding: 6px;
         width: 100%;
     }
     footer .top {
@@ -833,7 +848,7 @@ footer .buttom .PayFuture img {
     }
     footer .buttom .PayFuture {
         display: flex;
-        /* flex-direction: row-reverse; */
+        flex-direction: row-reverse;
     }
     footer .buttom .PayFuture img {
         width: 61%;
@@ -841,6 +856,9 @@ footer .buttom .PayFuture img {
 }
 
 @media only screen and (max-width: 620px) {
+    nav .FloatNav {
+        display: none;
+    }
     .HeroSection .HeroText {
         text-align: center;
     }
@@ -871,6 +889,9 @@ footer .buttom .PayFuture img {
 }
 
 @media only screen and (max-width: 477px) {
+    nav .FloatNav {
+        display: none;
+    }
     .HeroSection .Heroimg .star1 {
         left: 15pc;
         top: 2rem;
@@ -896,20 +917,22 @@ footer .buttom .PayFuture img {
         max-width: 304px;
     }
     footer {
-        padding: 8pc 2pc 2pc;
+        padding: 6pc 2pc 2pc;
     }
     footer .Float .StayOffersSection {
+        top: 34pc;
         margin: 2pc;
         padding: 1pc;
     }
     footer .Float .StayOffersSection h1 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     footer .Float .StayOffersSection .btn .input span {
         font-size: 17px;
     }
     footer .Float .StayOffersSection .btn button {
-        font-size: 0.8rem;
+        padding: 6px;
+        font-size: 0.6rem;
     }
     footer .top .First {
         align-items: center;
@@ -931,6 +954,12 @@ footer .buttom .PayFuture img {
 }
 
 @media only screen and (max-width: 355px) {
+    nav .FloatNav {
+        display: none;
+    }
+    nav .FloatNav ul span {
+        font-size: 2.5rem;
+    }
     section.HeroSection {
         padding: 6pc 1pc 0pc 1pc;
     }
@@ -954,13 +983,22 @@ footer .buttom .PayFuture img {
         width: 7vw;
         top: 7rem;
     }
+    .HeroSection .HeroText button {
+        font-size: 0.6rem;
+        /* border-radius: 6px; */
+        padding: 7px;
+    }
+    .ProductSection button {
+        font-size: 0.6rem;
+        padding: 7px;
+    }
     .BrandSection {
         padding: 1pc;
     }
     section.BrandSection img {
         width: 20vw;
     }
-    section.ProductSection .ProductCard .Product .Text h2 {
+    section.ProductSection .ProductCard .Product .Text h2 a {
         font-size: 10px;
     }
     .ProductSection .ProductCard .Product .Text p span {
@@ -977,6 +1015,9 @@ footer .buttom .PayFuture img {
         gap: 0.5rem;
         position: relative;
         justify-content: flex-end;
+    }
+    footer {
+        padding: 6pc 2pc 2pc;
     }
 }
 
@@ -1028,7 +1069,7 @@ footer .buttom .PayFuture img {
         font-size: 1rem;
     }
     footer .Float .StayOffersSection h1 {
-        font-size: 1rem;
+        font-size: 0.6rem;
     }
     footer .top .First h1 {
         font-size: 1rem;
@@ -1039,6 +1080,29 @@ footer .buttom .PayFuture img {
     footer .top .Second .card h1 {
         font-size: 1rem;
     }
+    .CustomersRating .RatingCard .Card {
+        max-width: 99%;
+    }
+    footer {
+        padding: 4pc 2pc 2pc;
+    }
 }
 
-@media only screen and (max-width: 242px) {}
+@media only screen and (max-width: 242px) {
+    nav {
+        padding: 7px;
+        flex-direction: column;
+    }
+    .HeroSection .Heroimg .star1 {
+        display: none;
+    }
+    footer .Float .StayOffersSection {
+        margin: 1pc;
+    }
+    footer {
+        padding: 5pc 2pc 2pc;
+    }
+    footer .Float .StayOffersSection .btn button {
+        border-radius: 9px;
+    }
+}

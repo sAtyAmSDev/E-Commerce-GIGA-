@@ -27,20 +27,21 @@
                 <a href=""> <span class="material-symbols-outlined">
                         person
                     </span></a>
-                <i class="fa-solid fa-bars-staggered"></i>
+                <i id="Bar" class="fa-solid fa-bars-staggered"></i>
+
 
             </div>
         </div>
         <div class="text">
             <ul>
                 <li>
-                    <a class="active" href="">Home</a>
+                    <a class="active" href="/">Home</a>
                 </li>
                 <li>
-                    <a href="">NewArrivals</a>
+                    <a href="#NEWARRIVALS">NewArrivals</a>
                 </li>
                 <li>
-                    <a href="">BrandSection</a>
+                    <a href="/Pages/Shop.html">Shop</a>
                 </li>
                 <li>
                     <a href="">About</a>
@@ -58,33 +59,33 @@
                 </li>
             </ul>
         </div>
-        <!-- <div class="FloatNav">
+        <div class="FloatNav" id="FloatNav">
             <ul>
-                <span class="material-symbols-outlined">
+                <span id="MenuClose" class="material-symbols-outlined">
                     close
                     </span>
                 <li>
-                    <a class="active" href="">Home</a>
+                    <a class="active" href="/">Home</a>
                 </li>
                 <li>
-                    <a href="">New Arrivals</a>
+                    <a href="#NEWARRIVALS">NewArrivals</a>
                 </li>
                 <li>
-                    <a href="">BrandSection</a>
+                    <a href="/Pages/Shop.html">Shop</a>
                 </li>
                 <li>
                     <a href="">About</a>
                 </li>
 
             </ul>
-        </div> -->
+        </div>
     </nav>
 
     <section class="HeroSection">
         <div class="HeroText">
             <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
             <p>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</p>
-            <button>Shop Now</button>
+            <button><a href="/Pages/Shop.html">Shop Now</a></button>
             <div class="counter">
                 <div>
                     <h2>200+</h2>
@@ -120,14 +121,14 @@
     </section>
 
     <section class="ProductSection">
-        <h1>NEW ARRIVALS</h1>
+        <h1 id="NEWARRIVALS">NEW ARRIVALS</h1>
         <div class="ProductCard">
             <div class="Product">
                 <div class="image">
                     <img src="/Image/ProductImage/t-shirt.avif" alt="" srcset="">
                 </div>
                 <div class="Text">
-                    <h2>T-shirt with Tape Details</h2>
+                    <h2><a href="Pages/Shop.html">T-shirt with Tape Details</a></h2>
                     <p>
                         <span class="material-symbols-outlined">
                             star
@@ -154,7 +155,7 @@
                     <img src="/Image/ProductImage/t-shirt.avif" alt="" srcset="">
                 </div>
                 <div class="Text">
-                    <h2>T-shirt with Tape Details</h2>
+                    <h2><a href="Pages/Shop.html">T-shirt with Tape Details</a></h2>
                     <p>
                         <span class="material-symbols-outlined">
                             star
@@ -181,7 +182,7 @@
                     <img src="/Image/ProductImage/t-shirt.avif" alt="" srcset="">
                 </div>
                 <div class="Text">
-                    <h2>T-shirt with Tape Details</h2>
+                    <h2><a href="Pages/Shop.html">T-shirt with Tape Details</a></h2>
                     <p>
                         <span class="material-symbols-outlined">
                             star
@@ -208,7 +209,7 @@
                     <img src="/Image/ProductImage/t-shirt.avif" alt="" srcset="">
                 </div>
                 <div class="Text">
-                    <h2>T-shirt with Tape Details</h2>
+                    <h2><a href="Pages/Shop.html">T-shirt with Tape Details</a></h2>
                     <p>
                         <span class="material-symbols-outlined">
                             star
@@ -231,7 +232,7 @@
                 </div>
             </div>
         </div>
-        <button>View All</button>
+        <button><a href="/Pages/Shop.html">View All</a></button>
     </section>
 
     <section class="ProductSection">
@@ -242,7 +243,7 @@
                     <img src="/Image/ProductImage/t-shirt.avif" alt="" srcset="">
                 </div>
                 <div class="Text">
-                    <h2>T-shirt with Tape Details</h2>
+                    <h2><a href="Pages/Shop.html">T-shirt with Tape Details</a></h2>
                     <p>
                         <span class="material-symbols-outlined">
                             star
@@ -269,7 +270,7 @@
                     <img src="/Image/ProductImage/t-shirt.avif" alt="" srcset="">
                 </div>
                 <div class="Text">
-                    <h2>T-shirt with Tape Details</h2>
+                    <h2><a href="Pages/Shop.html">T-shirt with Tape Details</a></h2>
                     <p>
                         <span class="material-symbols-outlined">
                             star
@@ -296,7 +297,7 @@
                     <img src="/Image/ProductImage/t-shirt.avif" alt="" srcset="">
                 </div>
                 <div class="Text">
-                    <h2>T-shirt with Tape Details</h2>
+                    <h2><a href="Pages/Shop.html">T-shirt with Tape Details</a></h2>
                     <p>
                         <span class="material-symbols-outlined">
                             star
@@ -323,7 +324,7 @@
                     <img src="/Image/ProductImage/t-shirt.avif" alt="" srcset="">
                 </div>
                 <div class="Text">
-                    <h2>T-shirt with Tape Details</h2>
+                    <h2><a href="Pages/Shop.html">T-shirt with Tape Details</a></h2>
                     <p>
                         <span class="material-symbols-outlined">
                             star
@@ -346,7 +347,7 @@
                 </div>
             </div>
         </div>
-        <button>View All</button>
+        <button><a href="/Pages/Shop.html">View All</a></button>
 
     </section>
 
@@ -381,9 +382,10 @@
         <div class="text">
             <h1>OUR HAPPY CUSTOMERS</h1>
             <div class="ArrowMove">
-                <span class="material-symbols-outlined">
+                <span class="material-symbols-outlined" id="arrowBack">
                     arrow_back
-                </span><span class="material-symbols-outlined">
+                </span>
+                <span class="material-symbols-outlined" id="arrowForward">
                     arrow_forward
                 </span>
             </div>
@@ -391,100 +393,72 @@
         <div class="RatingCard">
             <div class="Card">
                 <div class="star">
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
                 </div>
-                <h2>Sarah M. <span class="material-symbols-outlined">
-                        check_circle
-                    </span></h2>
+                <h2>Sarah M. <span class="material-symbols-outlined">check_circle</span></h2>
                 <p>"I'm blown away by the quality and style of the clothes I received from GIGA.CO. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."</p>
             </div>
             <div class="Card">
                 <div class="star">
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
                 </div>
-                <h2>Sarah M. <span class="material-symbols-outlined">
-                        check_circle
-                    </span></h2>
+                <h2>Sarah M. <span class="material-symbols-outlined">check_circle</span></h2>
                 <p>"I'm blown away by the quality and style of the clothes I received from GIGA.CO. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."</p>
             </div>
             <div class="Card">
                 <div class="star">
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
                 </div>
-                <h2>Sarah M. <span class="material-symbols-outlined">
-                        check_circle
-                    </span></h2>
+                <h2>Sarah M. <span class="material-symbols-outlined">check_circle</span></h2>
                 <p>"I'm blown away by the quality and style of the clothes I received from GIGA.CO. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."</p>
             </div>
             <div class="Card">
                 <div class="star">
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
-                    <span class="material-symbols-outlined">
-                        star
-                    </span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
                 </div>
-                <h2>Sarah M. <span class="material-symbols-outlined">
-                        check_circle
-                    </span></h2>
+                <h2>Sarah M. <span class="material-symbols-outlined">check_circle</span></h2>
+                <p>"I'm blown away by the quality and style of the clothes I received from GIGA.CO. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."</p>
+            </div>
+            <div class="Card">
+                <div class="star">
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                </div>
+                <h2>Sarah M. <span class="material-symbols-outlined">check_circle</span></h2>
+                <p>"I'm blown away by the quality and style of the clothes I received from GIGA.CO. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."</p>
+            </div>
+            <div class="Card">
+                <div class="star">
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                    <span class="material-symbols-outlined">star</span>
+                </div>
+                <h2>Sarah M. <span class="material-symbols-outlined">check_circle</span></h2>
                 <p>"I'm blown away by the quality and style of the clothes I received from GIGA.CO. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."</p>
             </div>
         </div>
     </section>
-
-
 
 
     <footer>
@@ -598,7 +572,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="Script/script.js"></script>
     <script src="https://kit.fontawesome.com/48e858cd62.js" crossorigin="anonymous"></script>
 </body>
 

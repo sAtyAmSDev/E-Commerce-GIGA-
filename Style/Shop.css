@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    border: 0;
+}
+
+.HeadSection {
+    background: #eeee;
+    padding: 3pc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.HeadSection h1 {}
+
+.HeadSection .text {
+    display: flex;
+    gap: 10px;
+}
+
+.HeadSection .text p {}
+
+.HeadSection .text span {}
+
+.Mainsection {
+    /* height: 100vh; */
+    display: flex;
+    padding: 3pc 3pc 10pc 3pc;
+    gap: 2rem;
+}
+
+.Mainsection aside {
+    gap: 3rem;
+    box-shadow: 0px 0px 2px 0px #80808082;
+    padding: 2pc;
+    border-radius: 7px;
+    border: 1px solid #eeee;
+    display: flex;
+    flex-direction: column;
+}
+
+.Mainsection aside .top {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.Mainsection aside .top p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Mainsection aside .top .input {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background: #eeee;
+    border-radius: 10px;
+    padding: 13px 9px;
+}
+
+.Mainsection aside .top .input input {
+    font-size: 15px;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+.Mainsection aside .top .input i {
+    cursor: pointer;
+}
+
+.Mainsection aside .ProductCategories {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.Mainsection aside .ProductCategories p {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.Mainsection aside .ProductCategories #Filter {
+    display: none;
+}
+
+.Mainsection aside .ProductCategories ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+.Mainsection aside .ProductCategories ul li {
+    cursor: pointer;
+    padding: 5px;
+    /* box-shadow: 0px 0px 5px 0px #04d904; */
+    border-radius: 6px;
+}
+
+.Mainsection aside .ProductCategories ul li:hover {
+    padding: 4px;
+    border: 1px solid #0cbf0c;
+}
+
+.Mainsection aside .ProductCategories ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.Mainsection .products {
+    width: 100%;
+}
+
+.Mainsection .products p {
+    font-size: 16px;
+}
+
+.Mainsection .products .top {
+    padding: 1pc;
+    display: flex;
+    gap: 9px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.Mainsection .products .top button {
+    height: 1pc;
+    background: #eeee;
+    color: black;
+    border-radius: 5px;
+    font-weight: 500;
+    border: 1px solid #0eb90e;
+    width: 2.5vw;
+    cursor: pointer;
+    /* text-align: center; */
+    display: flex;
+    font-size: 1.2rem;
+    padding: 1px 9px;
+    height: 6vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Mainsection .products .top button span {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0ccd0c;
+}
+
+.Mainsection .products .top .BackArrow {
+    display: flex;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.Mainsection .products .top .ForWordArrow {
+    display: flex;
+    align-items: center;
+}
+
+section {
+    border-bottom: 1px solid #b7acacee;
+    display: flex;
+    padding: 3pc;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px;
+    border: 0;
+    border-radius: 0px 16px;
+    background-color: #121212ab;
+    color: white;
+    transition: 0.2s;
+}
+
+
+/* button:hover {
+    box-shadow: 0px 0px 10px 2px #04ed04;
+} */
+
+.ProductCard {
+    display: flex;
+    overflow: hidden;
+    background: transparent;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ProductCard .Product {
+    width: 19vw;
+    display: flex;
+    gap: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 5px #eeeeee;
+    border: 1px solid #eeeeee;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ProductCard .Product .image img {
+    border-radius: 6px;
+    width: 100%;
+}
+
+
+/*  .ProductCard .Product .image {} */
+
+.ProductCard .Product .Text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.ProductCard .Product .Text h2 {
+    font-size: 15px;
+}
+
+.ProductCard .Product .Text p {
+    display: flex;
+    align-items: center;
+}
+
+.ProductCard .Product .Text p span {
+    color: gold;
+    font-size: 19px;
+}
+
+.ProductCard .Product .Text p label {
+    font-size: 15px;
+}
+
+.ProductCard .Product .Text h3 {
+    color: #04ed049c;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1131px) {
+    .ProductCard {
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .Mainsection {
+        flex-direction: column;
+    }
+    .Mainsection aside {
+        border-radius: 1pc;
+        padding: 2pc 2pc 1pc 2pc;
+        margin: 0pc 3pc;
+    }
+    .Mainsection aside .ProductCategories #Filter {
+        display: flex;
+    }
+    .Mainsection aside .top .input {
+        justify-content: space-between;
+        padding: 13px 24px;
+    }
+    .Mainsection aside .ProductCategories ul {
+        display: none;
+    }
+    .Mainsection aside .ProductCategories {
+        flex-direction: row;
+        background: #04ed0436;
+        padding: 10px 32px;
+        align-items: center;
+        border-radius: 0pc 5pc;
+    }
+    .Mainsection .products .top {
+        gap: 10px;
+    }
+    .Mainsection .products .top button {
+        width: 3.5vw;
+    }
+}
+
+@media only screen and (max-width: 756px) {
+    .HeadSection {
+        padding: 5pc 3pc 2pc 3pc;
+    }
+    .Mainsection .products .top button {
+        width: 4.5vw;
+    }
+    .ProductCard {
+        gap: 2rem;
+    }
+    .ProductCard .Product {
+        width: 25vw;
+    }
+}
+
+@media only screen and (max-width:641px) {
+    .ProductCard .Product {
+        width: 30vw;
+    }
+    .ProductCard {
+        gap: 3rem;
+    }
+}
+
+@media only screen and (max-width:575px) {
+    .Mainsection .products .top button {
+        width: 6.5vw;
+    }
+    .Mainsection aside {
+        margin: 0;
+    }
+    .Mainsection aside .ProductCategories p {
+        font-size: 14px;
+    }
+    .ProductCard .Product {
+        width: 35vw;
+    }
+    .ProductCard {
+        gap: 2rem;
+    }
+}
+
+@media only screen and (max-width:455px) {
+    .Mainsection {
+        padding: 1pc 1pc 11pc 1pc;
+    }
+    .Mainsection aside {
+        gap: 2rem;
+        padding: 1pc;
+    }
+    .Mainsection .products .top button {
+        font-size: .9rem;
+        width: 5.5vw;
+    }
+    .Mainsection .products .top button span {
+        font-size: 2rem;
+    }
+    .ProductCard .Product .Text h3 {
+        font-size: 15px;
+    }
+    .ProductCard .Product .Text p label {
+        font-size: 11px;
+    }
+    .ProductCard .Product {
+        width: 39vw;
+    }
+}
+
+@media only screen and (max-width:351px) {
+    .Mainsection .products .top button {
+        font-size: .9rem;
+        width: 7.5vw;
+    }
+    .ProductCard .Product {
+        width: 74%;
+    }
+    .Mainsection aside .ProductCategories p {
+        font-size: 10px;
+    }
+    .Mainsection aside .ProductCategories #Filter {
+        font-size: 1.3rem;
+    }
+    .Mainsection aside .top .input {
+        padding: 7px 10px;
+    }
+    .Mainsection aside {
+        gap: 1rem;
+    }
+}
+
+@media only screen and (max-width:299px) {
+    .Mainsection aside .ProductCategories {
+        padding: 9px 21px;
+    }
+    .Mainsection {
+        gap: 1rem;
+    }
+    .ProductCard .Product {
+        width: 95%;
+    }
+}
